@@ -14,8 +14,8 @@ class App extends Component{
       },
       image: 'https://s3.amazonaws.com/profilepage1/profilepic.JPG',
       quote: {
-        content: 'Beautiful things don\'t ask for attention',
-        // source: 'Test Test'
+        content: 'Life shrinks or expands in proportion to one\'s courage.',
+        source: 'Anais Nin'
       }
 
     };
