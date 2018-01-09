@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component{
@@ -8,9 +7,10 @@ class App extends Component{
     this.state = {
       person: {
         name: 'Claire Elizabeth Murray',
-        biography: ['Found my passion through technology.', 'Currently learning Angular.js.', 'I\'ve gotten quite adept at learning how to learn.', 'Contact: (305)788-9711', 'claire.e.murray00@gmail.com'],
+        biography: ['Found my passion through technology.', 'Currently learning Angular.js.', 'I\'ve gotten quite adept at learning how to learn.','This page was built using React.js', 'Contact: (305)788-9711', 'claire.e.murray00@gmail.com'],
         education: ['New World School of the Arts 1997-2003, B.F.A., Theater', 'Miami Dade College 2001-2004 A.A. Hospitality Management', 'Miami Dade College 2009-2012, A.S. Nursing', 'Miami Dade College 2013-2015, A.A. Elementary Education','Wyncode Full-Stack Web-Immersive 2017-2018'],
-        github: ''
+        github: <a href='https://github.com/CEMurray7'>Github</a>,
+        linkedin: <a href='https://www.linkedin.com/in/clairemurray7/'>Linkedin</a>,
       },
       image: 'https://s3.amazonaws.com/profilepage1/profilepic.JPG',
       quote: {
@@ -51,7 +51,8 @@ function Profile(props){
           )
         })
       }</div>
-
+        <div className="Github">{props.person.github}</div>
+        <div className="Linkedin">{props.person.linkedin}</div>
         <div className="Quote">
           <blockquote>&ldquo; {props.quote.content} &rdquo;</blockquote>
           <div className="byline">&mdash; {props.quote.source}</div>

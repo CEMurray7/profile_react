@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto';
 .App {
-  position: absolute;
+  position: flex;
   background-color: #d7dae0;
   top: 0;
   left: 0;
@@ -13,18 +13,19 @@
       flex-direction: column; } }
   .App .Image {
     width: 40vw;
-    height: 40vh;
     position: relative;
     background-size: cover;
     background-position: center;
     opacity: .8;}
     @media screen and (max-width: 980px) {
       .App .Image {
-        width: 40vw;
-        height: 40vh; } }
+        width: 100vw;
+        height: 40vh; }
+      }
   .App .Profile {
-    width: 50vw;
-    /* padding: 5vw 10vw; */
+    width: 70vw;
+    padding: 2vw;
+    /* background-color: #d7dae0; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -32,7 +33,9 @@
     @media screen and (max-width: 980px) {
       .App .Profile {
         width: 100vw;
-        height: 30vh; } }
+        /* height: 30vh;  */
+      }
+      }
     .App .Profile .Name {
       text-align: center;
       font-size: 6vw;
@@ -44,6 +47,18 @@
       margin-bottom: 3vw;
       opacity: .4; }
     .App .Profile .Education {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 3vw;
+      opacity: .6;
+    }
+    .App .Profile .Github {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 3vw;
+      opacity: .6;
+    }
+    .App .Profile .Linkedin {
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 3vw;
