@@ -15,7 +15,7 @@ class App extends Component{
       image: 'https://s3.amazonaws.com/profilepage1/profilepic.JPG',
       quote: {
         content: 'Beautiful things don\'t ask for attention',
-        source: 'Test Test'
+        // source: 'Test Test'
       }
 
     };
@@ -51,6 +51,7 @@ function Profile(props){
           )
         })
       }</div>
+
         <div className="Quote">
           <blockquote>&ldquo; {props.quote.content} &rdquo;</blockquote>
           <div className="byline">&mdash; {props.quote.source}</div>
