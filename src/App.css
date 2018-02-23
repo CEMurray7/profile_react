@@ -1,50 +1,66 @@
-@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto';
+@import 'https://fonts.googleapis.com/css?family=Monoton|Rock+Salt|Special+Elite|Reenie+Beanie';
 .App {
   position: flex;
-  background-color: #d7dae0;
+  background-color: #9a8480;
   top: 0;
   left: 0;
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 100vh; */
-  font-family: 'Roboto';
+  font-family: 'Special Elite';
   display: flex; }
   @media screen and (max-width: 980px) {
     .App {
       flex-direction: column; } }
   .App .Image {
-    width: 40vw;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+    width: 50vw;
+    /* height: 180vh; */
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* background-size: cover; */
+    background-position: top;
     opacity: .8;}
     @media screen and (max-width: 980px) {
       .App .Image {
-        width: 100vw;
-        height: 40vh; }
+        /* justify-content: center; */
+        width: 100vmax;
+        height: 100vmax;
       }
+        .App .Profile {
+          width: 60%;
+        }
+      }
+      /* img {
+        display: flex;
+        justify-content: flex-end;
+      } */
   .App .Profile {
-    width: 70vw;
+    width: 50vw;
     padding: 2vw;
     /* background-color: #d7dae0; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    color: #2C2C54; }
+    color: white; }
     @media screen and (max-width: 980px) {
       .App .Profile {
         width: 100vw;
-        /* height: 30vh;  */
+        height: 100vh;
       }
       }
     .App .Profile .Name {
       text-align: center;
-      font-size: 6vw;
-      font-family: 'Abril Fatface';
-      margin-bottom: 4vw; }
+      font-size: 5.5vw;
+      font-family: 'Special Elite';
+      /* margin-bottom: 4vw; */
+      margin-bottom: 0;
+      margin-top: 0;
+      opacity: 0.7;
+    }
     .App .Profile .Bio {
+      text-align: right;
       font-size: 18px;
       line-height: 1.8;
-      margin-bottom: 3vw;
+      /* margin-bottom: 3vw; */
       opacity: .4; }
     .App .Profile .Education {
       font-size: 18px;
@@ -53,27 +69,33 @@
       opacity: .6;
     }
     .App .Profile .Github {
+      display: flex;
+      justify-content: center;
       font-size: 18px;
       line-height: 1.8;
-      margin-bottom: 3vw;
+      margin-right: 3vw;
       opacity: .6;
     }
     .App .Profile .Linkedin {
+      justify-content: center;
+      display: flex;
       font-size: 18px;
       line-height: 1.8;
-      margin-bottom: 3vw;
+      margin-left: 3vw;
       opacity: .6;
     }
     .App .Profile .Quote {
       margin-top: auto; }
+
       .App .Profile .Quote blockquote {
         font-size: 36px;
-        font-family: 'Abril Fatface';
+        font-family: 'Reenie Beanie';
         font-style: italic;
         line-height: 1.4;
-        margin-bottom: .6em; }
+        margin-bottom: .6em;
+      opacity: .7; }
       .App .Profile .Quote .byline {
-        font-family: 'Times', serif;
+        font-family: 'Reenie Beanie', serif;
         text-align: right;
         font-size: 22px;
         font-style: italic;
