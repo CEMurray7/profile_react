@@ -7,7 +7,7 @@ class App extends Component{
     this.state = {
       person: {
         name: 'Claire Elizabeth Murray',
-        biography: ['Found my passion through technology.', 'Currently Exploring React.js.', 'I\'ve gotten quite adept at learning how to learn.','This page was built using React.js', 'Contact: (305)788-9711', 'claire.e.murray00@gmail.com'],
+        biography: ['Found my passion through technology.', 'Currently accepting Freelance work.', 'Prices are negotiable.','Creative Process is customizable.','This page was built using React.js', 'Contact: (305)788-9711', 'claire.e.murray00@gmail.com'],
         education: ['New World School of the Arts 1997-2003, Theater',
         'Miami Dade College 2001-2004, Hospitality Management',
         'Miami Dade College 2009-2012, Nursing',
